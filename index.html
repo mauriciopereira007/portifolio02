@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">&lt;Dev/&gt;</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Início</a></li>
+      <li><a href="#sobre">Sobre mim</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<section id="hero">
+  <div class="hero-content">
+    <h1>Olá, eu sou<br><span id="heroName">Seu Nome</span> 👋</h1>
+    <p id="heroSubtitle">Desenvolvedor Web apaixonado por criar experiências digitais modernas e funcionais.</p>
+    <a href="#projetos" class="btn">Ver meus projetos</a>
+    <div class="badge-row" id="heroBadges"></div>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="avatar-wrap">
+        <img src="perfil.png" alt="Foto de Mauricio Pereira" class="avatar-photo" id="profilePhoto" />
+      </div>
+      <div class="sobre-text">
+        <p class="section-label">Quem sou eu</p>
+        <h2 class="section-title">Sobre mim</h2>
+        <div class="section-divider"></div>
+        <p id="sobreTexto1"></p>
+        <p id="sobreTexto2"></p>
+        <div class="skills-list" id="skillsList"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projetos">
+  <div class="container">
+    <p class="section-label">O que desenvolvi</p>
+    <h2 class="section-title">Meus Projetos</h2>
+    <div class="section-divider"></div>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
+
+<footer id="contato">
+  <div class="footer-links" id="footerLinks"></div>
+  <p id="footerText"></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
